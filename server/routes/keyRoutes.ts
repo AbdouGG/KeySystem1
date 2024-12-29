@@ -1,6 +1,6 @@
 import express from 'express';
 import cors from 'cors';
-import { verifyKey } from '../../src/lib/keyUtils';
+import { verifyKey } from '../lib/keyUtils';
 
 const router = express.Router();
 
