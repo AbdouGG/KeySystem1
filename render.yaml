@@ -2,8 +2,8 @@ services:
   - type: web
     name: key-system-api
     env: node
-    buildCommand: npm install && npm run build
-    startCommand: npm run server
+    buildCommand: npm install && npm run build:server
+    startCommand: npm run server:start
     envVars:
       - key: VITE_SUPABASE_URL
         sync: false
