@@ -3,7 +3,7 @@ services:
     name: key-system-api
     env: node
     buildCommand: npm install && npm run build:server
-    startCommand: npm run server
+    startCommand: node dist/server/index.js
     envVars:
       - key: VITE_SUPABASE_URL
         sync: false
